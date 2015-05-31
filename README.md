@@ -6,6 +6,10 @@ A sample and tutorial demonstrating the use of the Google Calendar API
 
 After reading this tutorial, you should be able to have a working Android project that uses the Google Calendar API. This tutorial assumes that you're using [Android Studio] (SDK 1.1 or later), as well as API 22 or later and the Google Play Services.
 
+> Google Play Services is a set of APIs to allow app developers to take advantage of existing Google products (like Gmail, Calendar and Maps) in their own mobile applications and possibly enriching the user experience and ability to share content.
+
+Read more about it [here].
+
 ### Project setup
 
 First of all, open Android Studio to create your app. Enter the _application name_ and company domain, like `yourdomain.com` and the IDE will automatically setup the project's package name.
@@ -60,43 +64,54 @@ Enter the package name you obtained in the [Project setup phase], and enter your
 
 ### Run the app
 
-Now that you have created the app and connected it to the Calendar API, go to the "Run" menu and click *Run app*! You can either plug your device to the computer and run the app on it or you can run it on the emulator. Anyway, you gotta have Google Plays services installed in the system.
+Now that you have created the app and connected it to the Calendar API, go to the "Run" menu and click *Run app*! You can either plug your device to the computer and run the app on it or you can run it on the emulator (we ran it on a Nexus 5 5.1 emulator). Anyway, you gotta have Google Plays services installed in the system (in case you missed it, go to `Tools -> Android - SDK Manager`, search for Google Play Services SDK and install it).
 
 ## Usage Flow
 
-Now we'll test our application. Open the emulator, or connect your device (the images below were taken from a Nexus 5 5.1 emulator).
+Now with the app installed on our device, we're going to experience the Google Calendar API usage by fetching our existing events from our Google account.
 
 ![Android01](https://cloud.githubusercontent.com/assets/7546651/7891878/7a447540-0626-11e5-9556-1a337d030190.png)
-Click on _CalendarQuickStart App_
+
+* Click on _CalendarQuickStart App_ to launch the app
 
 ![Android02](https://cloud.githubusercontent.com/assets/7546651/7891879/802d1534-0626-11e5-9e9d-a52494a627dc.png)
-Enter your email and click _NEXT_
+
+* Enter your email and click _NEXT_
 
 ![Android03](https://cloud.githubusercontent.com/assets/7546651/7891882/83cbc6b8-0626-11e5-932a-94b606ac76d5.png)
-Enter your password and click _NEXT_
+
+* Enter your password and click _NEXT_
 
 ![Android04](https://cloud.githubusercontent.com/assets/7546651/7891884/872c7942-0626-11e5-983f-778a2b8bed3a.png)
-Click _ACCEPT_
+
+* Click _ACCEPT_, this will allow the app to fetch your calendar data from your Google account.
 
 ![Android05](https://cloud.githubusercontent.com/assets/7546651/7891887/8ad735b4-0626-11e5-840a-1744f8790b2d.png)
-Click _MORE_
+
+* Click _MORE_
 
 ![Android05](https://cloud.githubusercontent.com/assets/7546651/7891888/8f0b1af6-0626-11e5-8cb6-a2e407625972.png)
-Click _NEXT_
+
+* Click _NEXT_
 
 ![Android06](https://cloud.githubusercontent.com/assets/7546651/7891892/92d73656-0626-11e5-9c80-2189156c88ba.png)
-Choose your account and click _OK_
+
+* Choose your account and click _OK_
 
 ![Android07](https://cloud.githubusercontent.com/assets/7546651/7891895/979ac2e8-0626-11e5-83ad-d79277841b5e.png)
-Accept permissions by clicking on _OK_
+
+* Accept permissions by clicking on _OK_
 
 ![Android08](https://cloud.githubusercontent.com/assets/7546651/7891899/9f619e8e-0626-11e5-9cbf-900ef81b5661.png)
-Existing events are returned in plain text.
+
+* Existing events are returned in plain text. The *CalendarQuickStart* app has successfully downloaded your events through.
 
 ![Desktop](https://cloud.githubusercontent.com/assets/7546651/7891903/a738d988-0626-11e5-99e9-657fde173c05.png)
 __Calendar Gmail screenshot__
 
 ##### Further Reading for Google Calendar API
+
+If you got hooked and feel like going beyond this tutorial with Calendar integration (creating and updating events from your app, perhaps?), then you should definitely take a look at these links:
 
 + [Quick start](https://developers.google.com/google-apps/calendar/quickstart/android)
 + [API reference](https://developers.google.com/google-apps/calendar/v3/reference/)
@@ -112,5 +127,6 @@ __Calendar Gmail screenshot__
 MIT License
 
 [Android Studio]: http://developer.android.com/tools/studio/index.html
+[here]: https://developers.google.com/android/guides/overview
 [Google Developers Console]: https://console.developers.google.com/start/api?id=calendar
 [Project setup phase]: #project-setup
